@@ -13,7 +13,7 @@ class HomePage extends ConsumerWidget {
     final joke = ref.watch(jokeDataProvider).joke;
     return Scaffold(
       appBar: AppBar(
-        title: Text('title'.trim()),
+        title: Center(child: Text('JOKE')),
       ),
       floatingActionButton: const RefreshJoke(),
       body: isLoading
